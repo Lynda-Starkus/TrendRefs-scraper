@@ -155,7 +155,7 @@ def launchSuggestion():
 if __name__ == "__main__":
 
     if len(sys.argv) < 3:
-        print("Usage: python keyword_count.py '<keyword1+keyword2+...>' <start year> <end year>" "[1]" "1 is optional to enable autosuggest")
+        print("Usage: python keyword_count.py '<keyword1>' <start year> <end year>" "[1]" "1 is optional to enable autosuggest")
         
         
     else:
