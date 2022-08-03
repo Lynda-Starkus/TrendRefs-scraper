@@ -159,21 +159,23 @@ if __name__ == "__main__":
         
         
     else:
+        if(sys.argv[4]):
+            launchSuggestion()
+            
         keyword = sys.argv[1]
         start_year = int(sys.argv[2])
         end_year = int(sys.argv[3])
         years, results = get_range(keyword, start_year, end_year)
 
-        if(sys.argv[4]):
-            launchSuggestion()
+        
         
         plt.plot(years, results)
  
-        plt.title('Classes by Date')
+        plt.title('Number of citations by year')
  
  
-        plt.xlabel('Date')
-        plt.ylabel('Classes')
+        plt.xlabel('Year')
+        plt.ylabel('Citations number')
         plt.show()
 
     
